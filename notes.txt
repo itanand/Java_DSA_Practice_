@@ -1,0 +1,70 @@
+Hi [HiringManager name ],
+
+My name is Anand Mohan, and I'm currently a Software Engineer working at HeatrecSolutions,I've experience in
+Full Stack Development and Cloud Technologies.
+
+I saw a post about Software Developer and I'm rearly interested in it because i've keen interest in FullStack Development.
+
+I believe i can contribute to the team because,
+1. JavaScript + React
+2. Cloud Technologies
+3. Mobile App Development
+
+Looking forward to hearing from you, happy to share my resume. If you think i have the skills to help
+the team be successful.
+
+Best Regards,
+Anand Mohan
+
+
+#What is My JavaScript
+
+JDK - Java Development Kit
+JRE - Java Runtime Environment
+JVM - Java Virtual machine
+
+#How Java Programs Works?
+
+Compilation ->   Source code java->  Compiler [ jdk ]  -> Byte Code [.class]
+
+Execution ->  Byte code -> JVM -> { Native code}
+
+1. Functions and Methods
+
+void main(){
+
+}
+
+2. Class
+
+class Main{
+    void main(){
+
+    }
+}
+
+#Output -
+
+System.out.println("Hello World");
+
+#Conditional Statement
+
+if, else
+
+else if
+
+switch
+
+break
+
+##Print the Pattern
+
+1. Print the Pattern
+
+1             <-  row no. = 1    no. 1 to 1
+1 2           <-  row no. =
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+#Half Pyramid with numbers
