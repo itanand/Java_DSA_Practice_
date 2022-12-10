@@ -1,0 +1,2095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Kutumb is a private social network for communities (think Reddit for Bharat).
+        India, especially Bharat thrives on communities. India has a vast number of communities based on culture, creed, beliefs, interests, professions, etc. For example, there are more than 20000 social groups in India, 1000s of spiritual, religious, or other non-government organisations, and 100s of unique professions. We are creating a social network for millions of members inside each of these communities.">
+        <meta name="author" content="Kutumb">
+        <meta property="og:url" content="https://kutumb.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Kutumb - Original Indian Community App" />
+        <meta property="og:description" content="Kutumb is a private social network for communities (think Reddit for Bharat).
+        India, especially Bharat thrives on communities. India has a vast number of communities based on culture, creed, beliefs, interests, professions, etc. For example, there are more than 20000 social groups in India, 1000s of spiritual, religious, or other non-government organisations, and 100s of unique professions. We are creating a social network for millions of members inside each of these communities." />
+        <meta property="og:image" content="https://media.kutumbapp.com/logo.png" />
+        <meta property="fb:app_id" content="576616919644133" />
+        <title>Kutumb App - India's largest community platform</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+
+
+        <style>
+        body {
+            overflow-x: hidden;
+        }
+        html, body {
+            scroll-behavior: smooth;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        footer {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .socials {
+            background-size: auto;
+            border-radius: 10px;
+            position: relative;
+            padding-left: 5px;
+            padding-top: 7px;
+            width: 28%;
+            padding-bottom: 7px;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        @media screen and (min-width:1025px) {
+            .social-icons {
+                width: 30px;
+                height: 30px;
+            }
+            .playstore-logo-image-lg {
+                display: block;
+                width: 442px;
+                height: 349.9px;
+            }
+        }
+        footer .map {
+            width: 100%
+        }
+
+        footer .footer-links {
+            width: 100%;
+        }
+
+        footer .info {
+            width: 50%;
+            display: inline-block;
+            padding-right: 50px;
+            box-sizing: border-box;
+            vertical-align: top
+        }
+
+        footer .info .name {
+            font-size: 24px;
+            margin: 15px 0
+        }
+
+        footer .info .address,
+        footer .info .contact,
+        footer .info .follow img {
+            margin: 10px 10px 0 0
+        }
+
+        .copyright {
+            text-align: center !important;
+            font-size: 16px;
+            padding: 20px 0 0
+        }
+
+        @media screen and (max-width: 415px) {
+            .socials {
+                background-size: auto;
+                border-radius: 10px;
+                position: relative;
+                padding-left: 5px;
+                padding-top: 7px;
+                max-width: 150px;
+                text-align: center;
+                padding-bottom: 7px;
+            }
+            .social-icons {
+                width: 22px;
+                height: 22px;
+                margin-left: 0px;
+            }
+            #company-name-size {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .meet-team-block {
+            background-color: #fff6e8;
+            margin-top: 3rem;
+        }
+
+        .member-links {
+            display: flex;
+            justify-content: center;
+        }
+        .member-desc {
+            font-family: Noto Sans,sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #292929;
+            padding-top: 0.5rem;
+            padding-bottom: 1rem;
+            width: 90%;
+            margin: auto;
+        }
+        .icon {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .member-pos {
+            font-family: Noto Sans,sans-serif;
+            font-size: 20px;
+            color: #575757;
+        }
+
+        .member-name {
+            font-family: Noto Sans,sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #222222;
+        }
+
+        .member-pic-container {
+            width: 300px;
+            height: 300px;
+            margin: 3rem auto 1rem;
+            border-radius: 20px;
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.16);
+        }
+
+        .member-pic {
+            width: 100%;
+            height: 300px;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.16);
+        }
+
+        .meet-team-title {
+            font-family: Noto Sans,sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            color: #292929;
+            padding-top: 2rem;
+        }
+
+        .team-member-list {
+            width: 80%;
+            margin: auto;
+            padding-bottom: 3rem;
+        }
+
+        .benefits-block {
+        }
+
+        .benefits {
+            width: 80%;
+            margin: auto;
+        }
+
+        .benefits-block .benefits .benefit-item {
+            padding-top: 100px;
+        }
+
+        .benefit-item .image {
+            width: 100%;
+        }
+
+        .benefits-block .main-title {
+            font-family: Noto Sans,sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            color: #292929;
+            margin-top: 3rem;
+        }
+
+        .benefits-block .title {
+            font-family: Noto Sans,sans-serif;
+            font-size: 45px;
+            font-weight: bold;
+            color: #f9ae39;
+        }
+
+        .benefits-block .description {
+            margin-top: 0.5rem;
+            font-family: Noto Sans,sans-serif;
+            font-size: 22px;
+            color: #7d7d7d;
+        }
+
+        .video-list {
+            width: 90%;
+            margin: auto;
+        }
+
+        .video-block {
+            border-radius: 10px;
+            background-color: #fff6e8;
+            margin-top: 3.5rem;
+        }
+
+        .video-item {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .video-item .video video {
+            border-radius: 20px;
+            width: 350px;
+            height: 400px;
+        }
+
+        .video-item .video-author-name {
+            text-align: center;
+            font-family: Noto Sans,sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            color: #303030;
+            overflow: hidden;
+        }
+
+        .video-item .video-author-desc {
+            font-family: Noto Sans,sans-serif;
+            font-size: 15px;
+            text-align: center;
+            color: #8b8b8b;
+        }
+
+        .video-block .title{
+            width: 100%;
+            padding-top: 2rem;
+            font-family: Noto Sans,sans-serif;
+            margin-top: 1rem;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: #494949;
+        }
+
+        .video-block .description {
+            margin: 2rem auto;
+            font-family: Noto Sans,sans-serif;
+            font-size: 20px;
+            text-align: center;
+            color: #494949;
+            width: 50%;
+        }
+
+        .form .title{
+            width: 100%;
+            padding-top: 2rem;
+            font-family: Noto Sans,sans-serif;
+            margin-top: 1rem;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: #fa3f4a;
+        }
+
+        .form .description {
+            margin: 1rem auto 0.2rem auto;
+            font-family: Noto Sans,sans-serif;
+            font-size: 20px;
+            text-align: center;
+            color: #494949;
+            width: 50%;
+        }
+
+        .form .compulsory {
+            margin: 2px auto;
+            font-family: Noto Sans,sans-serif;
+            font-size: 12px;
+            text-align: center;
+            color: #fa3f4a;
+            width: 50%;
+        }
+
+        .form .form-list {
+            margin: auto;
+            margin-top: 2rem;
+            font-family: Noto Sans,sans-serif;
+            font-size: 12px;
+            text-align: left;
+            color: #808080;
+            width: 75%;
+        }
+
+        .form .form-label {
+            margin: auto;
+            margin-left: 1rem;
+            margin-bottom: 0.5rem;
+            font-family: Noto Sans,sans-serif;
+            font-size: 14px;
+            text-align: left;
+            color: #808080;
+            width: 75%;
+        }
+
+        .form .asterisk {
+            color: #fa3f4a;
+        }
+
+        .form .input-box {
+            margin: auto;
+            margin-bottom: 1rem;
+            border: 1px solid #707070;
+            border-radius: 33px;
+            height: 2.5rem;
+            font-family: Noto Sans,sans-serif;
+            font-size: 12px;
+            text-align: left;
+            color: #808080;
+            width: 100%;
+            padding-left: 1rem;
+        }
+
+        .form .condition-text {
+            margin: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            height: 2.5rem;
+            font-family: Noto Sans,sans-serif;
+            font-size: 12px;
+            text-align: center;
+            color: #808080;
+            width: 50%;
+        }
+
+        .form .form-list .contact-us-box {
+            width: 25%;
+            height: 3.5rem;
+            padding-top: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 6px 0 rgb(0 0 0);
+            background-color: #fa3f4a;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+        .form .form-list .contact-us-text {
+            font-family: Noto Sans,sans-serif;
+            font-size: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .header {
+            margin-top: 3%;
+        }
+
+        .header-1 {
+            margin-bottom: 40px;
+        }
+
+        .header-1 .right-top-cta {
+            font-family: Noto Sans,sans-serif;
+            font-size: 25px;
+            line-height: 1.05;
+            letter-spacing: normal;
+            color:#c5c5c5;
+            padding-right: 3rem;
+            padding-top: 0.6rem;
+        }
+
+        .header-1 .k-logo {
+            width: 300px;
+            margin-top: 0.5rem;
+            margin-left: 2.5rem;
+            height: 4rem;
+        }
+
+        .header .contact-us-box {
+            width: 600px;
+            height: 90px;
+            padding-top: 25px;
+            border-radius: 17px;
+            box-shadow: 0 3px 6px 0 rgb(0 0 0);
+            background-color: #fa3f4a;
+            text-align: center;
+            margin: auto;
+        }
+
+        .feature-link{
+            font-family: Noto Sans,sans-serif;
+            font-size: 16px;
+            text-align: center;
+            color: #fa3f4a;
+        }
+
+        .feature-link-logo {
+            margin-right: 1rem;
+        }
+
+        .feature-author-details{
+            font-family: Noto Sans,sans-serif;
+            font-size: 18px;
+            line-height: 1.65;
+            letter-spacing: normal;
+            text-align: left;
+            color: #303030;
+            white-space: initial;
+        }
+
+        .featured-list {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .featured-list::-webkit-scrollbar { /* WebKit */
+            width: 0;
+            height: 0;
+        }
+
+        .feature-item {
+            width: 70vw;
+            max-width: 1200px;
+            height: 100%;
+            margin: 0 30px 0 54px;
+            padding: 19px 27px 16px 20px;
+            border: solid 2px #fa3f4a;
+            background-color: #ffe7c3;
+            display: inline-block;
+            border-radius: 22px;
+            position: relative;
+        }
+
+        .feature-meta {
+            position: absolute;
+            bottom: 5px;
+            width: 100%;
+        }
+
+        .feature-item-title {
+            font-family: Noto Sans,sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            color: #303030;
+            white-space: initial;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item-detail {
+            font-family: Noto Sans,sans-serif;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+            color: #555555;
+            white-space: initial;
+            margin-bottom: 60px;
+        }
+
+        .featured-in-block {
+            margin-top: 3.5rem;
+        }
+
+        .featured-in-text-title {
+            font-family: Noto Sans,sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: left;
+            color: #494949;
+            margin-left: 4.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .header .contact-us-text {
+            font-family: Noto Sans,sans-serif;
+            font-size: 25px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .header .title-1 {
+            margin: 0 0 1em 0;
+            font-family: Noto Sans,sans-serif;
+            font-size: 30px;
+            text-align: center;
+            color: #808080;
+        }
+
+        .header .title-2 {
+            font-family: Noto Sans,sans-serif;
+            font-size: 55px;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #303030;
+        }
+
+        .feature-item .f-image {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto auto;
+        }
+
+        .feature-item .f-image-v1 {
+            width: 100%;
+            /* width: 401px; */
+            height: 120px;
+            max-width: 60vw;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto auto;
+        }
+
+        .feature-item-image-container {
+            margin: auto;
+            text-align: center;
+            height: 200px;
+            position: relative;
+        }
+
+        .playstore-logo-image-mb-block {
+            margin: 101px auto auto;
+            text-align: center;
+        }
+        .playstore-logo-image-mb {
+            width: 600px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .form .title{
+                font-size: 32px;
+                color: #fa3f4a;
+            }
+
+            .form .description {
+                font-size: 16px;
+                width: 75%;
+            }
+
+            .form .condition-text {
+                margin: auto;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                height: 2.5rem;
+                font-family: Noto Sans,sans-serif;
+                font-size: 12px;
+                text-align: center;
+                color: #808080;
+                width: 80%;
+            }
+
+            .form .form-list .contact-us-box {
+                width: 50%;
+            }
+
+            .feature-item-image-container {
+                height: 150px;
+            }
+
+            .feature-item-image-container .f-image {
+                height: 150px;
+                width: 150px;
+            }
+
+            .feature-link {
+                text-align: left;
+            }
+
+            .feature-link-logo {
+                margin-right: 0.5rem;
+            }
+
+            footer .copyright {
+                text-align: left
+            }
+            footer .info {
+                width: 100%;
+                padding: 0
+            }
+
+            .playstore-logo-image-mb-block {
+                margin: 2rem auto auto;
+                text-align: center;
+            }
+
+            .playstore-logo-image-mb {
+                width: 320px;
+                height: 75px;
+                /* margin: 80.9px 49px; */
+                /* object-fit: contain; */
+            }
+            .socials {
+                background-size: auto;
+                border-radius: 10px;
+                position: relative;
+                padding: 10px;
+                width: 100%;
+            }
+            .social-icons {
+                width: 22px;
+                height: 22px;
+                margin-left: 0;
+            }
+            #company-name-size {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            footer {
+                padding: 20px 0
+            }
+
+            .header-1 .k-logo {
+                width: 180px;
+                margin-left: 0.5rem;
+            }
+
+            .header-1 .right-top-cta {
+                padding-top: 0.5rem;
+                padding-right: 1rem;
+                font-family: Noto Sans,sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1.31;
+                margin:auto;
+            }
+
+            .header .title-1 {
+                font-size: 14px;
+            }
+
+            .header .title-2 {
+                font-size: 24px;
+            }
+
+            .header .contact-us-box {
+                width: 90%;
+                height: 4rem;
+                padding: 0;
+                border-radius: 10px;
+                background-color: #fa3f4a;
+            }
+
+            .header .contact-us-text {
+                /* margin: 0 33.7px 0 0; */
+                font-family: Noto Sans,sans-serif;
+                font-size: 20px;
+                line-height: 1.7;
+                color: #ffffff;
+                height: 100%;
+                text-align: center;
+                padding-top: 1rem;
+
+            }
+
+            .feature-item .f-image {
+                width: 239px;
+                height: 179px;
+                max-width: 60vw;
+            }
+
+            .feature-item .f-image-v1 {
+                width: 239px;
+                height: 125px;
+                max-width: 60vw;
+            }
+
+            .feature-item .feature-item-title {
+                font-size: 18px;
+            }
+
+            .feature-item .feature-item-detail {
+                font-size: 14px;
+            }
+
+            .feature-item .feature-link-logo {
+                width: 13px;
+            }
+
+            .feature-item .feature-link {
+                font-size: 15px;
+            }
+
+            .feature-item .feature-author-details {
+                font-size: 11px;
+            }
+
+            .video-block .title {
+                font-size: 22px;
+            }
+
+            .video-block .description {
+                font-size: 14px;
+                width: 80%;
+            }
+
+            .featured-in-text-title {
+                font-size: 20px;
+            }
+
+            video {
+                /* width: 117px; */
+                width: 100%;
+                height: 100%;
+            }
+
+            .video-list {
+                display: flex;
+                overflow-x: scroll;
+                white-space: nowrap;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .video-list::-webkit-scrollbar { /* WebKit */
+                width: 0;
+                height: 0;
+            }
+
+            .video-item {
+                width: 250px;
+                margin: 0.5rem;
+            }
+
+            .video-item .video video {
+                width: 225px;
+                height: 400px;
+            }
+
+            .video-item .video-author-name {
+                font-size: 17px;
+            }
+
+            .video-item .video-author-desc {
+                font-size: 12px;
+                white-space: initial;
+            }
+
+            .benefits-block .main-title {
+                font-size: 30px;
+                margin: 56px 0 0 0;
+            }
+
+            .benefits-block .benefits .benefit-item {
+                padding-top: 67px;
+            }
+
+            .benefits-block .title {
+                font-size: 30px;
+                /* height: 41px; */
+                margin-top: 35px;
+                text-align: center;
+            }
+
+            .benefits-block .description {
+                font-size: 15px;
+            }
+
+            .meet-team-block {
+                margin-top: 56px;
+                padding-bottom: 1rem;
+            }
+
+            .team-member {
+                width: 50%;
+            }
+
+            .meet-team-title {
+                padding-top: 22px;
+                font-size: 25px;
+            }
+
+            .member-pic-container {
+                height: 100px;
+                width: 100px;
+                border-radius: 5px;
+                box-shadow: 0 3px 6px 0
+            }
+
+            .icon {
+                font-size: 1rem;
+                margin: 0.25rem;
+            }
+
+            .member-pic {
+                height: 100px;
+                width: 100px;
+                border-radius: 5px;
+                box-shadow: 0 3px 6px 0
+            }
+
+            .member-desc {
+                font-size: 8px;
+                padding-bottom: 0;
+            }
+
+            .member-pos {
+                font-size: 11px;
+
+            }
+
+            .member-name {
+                font-size: 14px;
+            }
+
+            .featured-list {
+                /* height: 415px; */
+            }
+
+            .feature-item {
+                margin: 0 0 0 40px;
+            }
+
+            .member-links img {
+                width: 12px;
+                height: 16px;
+            }
+
+            .video-block {
+                padding-bottom: 39px;
+                margin-top: 2rem;
+            }
+
+            footer .info .name {
+                font-size: 16px;
+            }
+            footer .info .address {
+                font-size: 10px;
+            }
+            footer .info .contact {
+                font-size: 11px;
+            }
+            footer .info .map {
+                display: none;
+            }
+            footer .footer-links div {
+                font-size: 12px;
+            }
+        }
+        .video {
+            position: relative;
+        }
+        .playpause {
+            position: absolute;
+            background-image:url(https://media.kutumbapp.com/play2.png);
+            background-repeat:no-repeat;
+            width:20%;
+            height:20%;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:auto;
+            background-size:contain;
+            background-position: center;
+        }
+        #submittedform {
+            display: none;
+        }
+        /* The snackbar - position it at the bottom and in the middle of the screen */
+        #snackbar {
+            visibility: hidden; /* Hidden by default. Visible on click */
+            min-width: 250px; /* Set a default minimum width */
+            margin-left: -125px; /* Divide value of min-width by 2 */
+            background-color: #333; /* Black background color */
+            color: #fff; /* White text color */
+            text-align: center; /* Centered text */
+            border-radius: 2px; /* Rounded borders */
+            padding: 16px; /* Padding */
+            position: fixed; /* Sit on top of the screen */
+            z-index: 1; /* Add a z-index if needed */
+            left: 50%; /* Center the snackbar */
+            bottom: 30px; /* 30px from the bottom */
+        }
+
+        /* Show the snackbar when clicking on a button (class added with JavaScript) */
+        #snackbar.show {
+            visibility: visible; /* Show the snackbar */
+            /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+            However, delay the fade out process for 2.5 seconds */
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        /* Animations to fade the snackbar in and out */
+        @-webkit-keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 30px; opacity: 1;}
+        }
+
+        @keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 30px; opacity: 1;}
+        }
+
+        @-webkit-keyframes fadeout {
+            from {bottom: 30px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+
+        @keyframes fadeout {
+            from {bottom: 30px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+    </style>
+    </head>
+
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB277XV"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <div class="header">
+            <div class="row header-1">
+                <div class="col-6">
+                    <img class="k-logo" src="/public/images/main/k-logo.svg" alt=""/>
+                    <!-- <img class="k-logo" src="https://media.kutumbapp.com/website/kutumb_logo.svg" alt=""/> -->
+                </div>
+                <div class="col-6 float-right right-top-cta">
+                    <!-- <div class="float-end">Why Join Us?</div> -->
+                    <a class="nav-link float-end right-top-cta" href="/why-join-us" data-toggle="modal">Why Join Us?</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12 title-1">Kutumb App - India's Largest Community App</div>
+                        <div class="col-lg-12 title-2">Do you want to register your<br><span style="color: #fa3f4a;border-bottom: 3px dashed;text-underline-position: under;">community</span> on Kutumb?</div>
+                        <div class="col-lg-12">
+                            <a style="text-decoration-color: transparent;" href="#form">
+                                <div class="contact-us-box" id="contact-us-button">
+                                    <p class="contact-us-text">
+                                        Contact Us
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="snackbar">Please Enter Phone Number</div>
+        <div class="featured-in-block">
+            <div class="featured-in-text-title">Featured In</div>
+            <div class="featured-list-wrap">
+                <div class="row featured-list">
+                        <div class="col-md-12 feature-item">
+                            <a style="text-decoration: none;" href="https://zeenews.india.com/hindi/india/madhya-pradesh-chhattisgarh/trending-news/kutumb-app-becoming-famous-and-helpful-for-organization-mpgs/902856" target="_blank">
+                            <div class="row">
+                                <div class="col-lg-4 feature-item-image-container">
+                                    <img class="f-image" src="https://media.kutumbapp.com/website/zee_mp.png" alt=""/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="feature-item-title">
+                                        &#34;कोरोना काल में वरदान बना कुटुंब एप, संगठनों के साथ जुड़ कर लाभ ले रहे नए लोग &#34;
+                                    </div>
+                                    <div class="feature-item-detail">
+                                        कोरोना काल में कुटुंब एप वरदान बनकर उभरी है. यह एप संगठनों की गतिविधियों को निरंतर जारी रखने बेहतर प्लेटफॉर्म है...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row feature-meta">
+                                <div class="col-lg-4 feature-link">
+                                    <a style="color: red;text-decoration: none;" href="https://zeenews.india.com/hindi/india/madhya-pradesh-chhattisgarh/trending-news/kutumb-app-becoming-famous-and-helpful-for-organization-mpgs/902856" target="_blank">
+                                        <img class="feature-link-logo" src="https://media.kutumbapp.com/website/read-link.svg" alt=""/>Read complete article
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 feature-author-details">
+                                    May 18, 2021&nbsp;&nbsp;|&nbsp;&nbsp;Written By - Zee media Bureau
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-12 feature-item">
+                            <a style="text-decoration: none;" href="https://hindi.news18.com/news/business/kutumb-app-becomes-new-partner-of-organizations-in-corona-pandemic-nodvkj-3588292.html" target="_blank">
+                            <div class="row">
+                                <div class="col-lg-4 feature-item-image-container">
+                                    <img class="f-image" src="https://media.kutumbapp.com/website/news_18.png" alt=""/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="feature-item-title">
+                                        कोरोना काल में संगठनों का नया साथी बना Kutumb ऐप, मिल रही है फ्री पेमेंट गेटवे की सुविधा
+                                    </div>
+                                    <div class="feature-item-detail">
+                                        कुटुंब एप्लीकेशन (Kutumb Application) कोरोना काल में संगठनों की गतिविधियों को निरंतर जारी रखने हेतु एक ...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row feature-meta">
+                                <div class="col-lg-4 feature-link">
+                                    <a style="color: red;text-decoration: none;" href="https://hindi.news18.com/news/business/kutumb-app-becomes-new-partner-of-organizations-in-corona-pandemic-nodvkj-3588292.html" target="_blank">
+                                        <img class="feature-link-logo" src="https://media.kutumbapp.com/website/read-link.svg" alt=""/>Read complete article
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 feature-author-details">
+                                    May 18, 2021&nbsp;&nbsp;|&nbsp;&nbsp;Written By - Zee media Bureau
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-12 feature-item">
+                            <a style="text-decoration: none;" href="https://www.amarujala.com/uttar-pradesh/aligarh/kutumb-app-became-the-new-partner-of-organizations-in-the-era-of-corona-epidemic" target="_blank">
+                            <div class="row">
+                                <div class="col-lg-4 feature-item-image-container">
+                                    <img class="f-image-v1" src="https://media.kutumbapp.com/website/amarjula_news.png" alt=""/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="feature-item-title">
+                                        &#34;कोरोना महामारी के दौर में संगठनों का नया साथी बना कुटुंब एप&#34;
+                                    </div>
+                                    <div class="feature-item-detail">
+                                        कुटुंब एप्लीकेशन कोरोना काल में संगठनों की गतिविधियों को निरंतर जारी रखने हेतु एक महत्वपूर्ण प्लेटफॉर्म है। महामारी के ...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row feature-meta">
+                                <div class="col-lg-4 feature-link">
+                                    <a style="color: red;text-decoration: none;" href="https://www.amarujala.com/uttar-pradesh/aligarh/kutumb-app-became-the-new-partner-of-organizations-in-the-era-of-corona-epidemic" target="_blank">
+                                        <img class="feature-link-logo" src="https://media.kutumbapp.com/website/read-link.svg" alt=""/>Read complete article
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 feature-author-details">
+                                    May 13, 2021&nbsp;&nbsp;|&nbsp;&nbsp;Published by: प्रशांत कुमार
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-12 feature-item">
+                            <a style="text-decoration: none;" href="https://www.haribhoomi.com/news/india/kutumb-app-became-the-new-partner-of-organizations-in-the-era-of-corona-epidemic-377813#.YJ1a47tL1EM.whatsapp" target="_blank">
+                            <div class="row">
+                                <div class="col-lg-4 feature-item-image-container">
+                                    <img class="f-image-v1" src="https://media.kutumbapp.com/website/haribhoomi_news.png" alt=""/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="feature-item-title">
+                                        &#34;कोरोना महामारी के दौर में डिजटली एकजुट हो रहे संगठन&#34;
+                                    </div>
+                                    <div class="feature-item-detail">
+                                        कुटुंब पर संस्था अपना प्राइवेट अकाउंट बनवाती है और फिर संस्था अपने लोगों को इसपर जोड़ सकती है | बेहतर तरीके से ...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row feature-meta">
+                                <div class="col-lg-4 feature-link">
+                                    <a style="color: red;text-decoration: none;" href="https://www.haribhoomi.com/news/india/kutumb-app-became-the-new-partner-of-organizations-in-the-era-of-corona-epidemic-377813#.YJ1a47tL1EM.whatsapp" target="_blank">
+                                        <img class="feature-link-logo" src="https://media.kutumbapp.com/website/read-link.svg" alt=""/>Read complete article
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 feature-author-details">
+                                    May 13, 2021&nbsp;&nbsp;|&nbsp;&nbsp;Written By - Haribhoomi Team
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-12 feature-item">
+                            <a style="text-decoration: none;" href="https://www.jagran.com/uttar-pradesh/kanpur-city-iit-kanpur-alumni-swatantra-verma-invent-new-mobile-kutumb-app-is-helpful-in-any-pandemic-period-jagran-special-21647478.html" target="_blank">
+                            <div class="row">
+                                <div class="col-lg-4 feature-item-image-container">
+                                    <img class="f-image-v1" src="https://media.kutumbapp.com/website/jaagran_news.png" alt=""/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="feature-item-title">
+                                        #Good News: मदद करने की चाह है तो मददगार होगा कुटुंब एप, संगठनों के लिए बेहद फायदेमंद
+                                    </div>
+                                    <div class="feature-item-detail">
+                                        कानपुर, जेएनएन। अगर आप घर बैठे समूह के रूप में एक दूसरे की मदद करना चाह रहे हैं तो आसानी से कर सकेंगे। आपको ...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row feature-meta">
+                                <div class="col-lg-4 feature-link">
+                                    <a style="color: red;text-decoration: none;" href="https://www.jagran.com/uttar-pradesh/kanpur-city-iit-kanpur-alumni-swatantra-verma-invent-new-mobile-kutumb-app-is-helpful-in-any-pandemic-period-jagran-special-21647478.html" target="_blank">
+                                        <img class="feature-link-logo" src="https://media.kutumbapp.com/website/read-link.svg" alt=""/>Read complete article
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 feature-author-details">
+                                    May 15, 2021&nbsp;&nbsp;|&nbsp;&nbsp;Author: Abhishek Agnihotri
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-12 feature-item">
+                            <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=zvRvSrgo4G0" target="_blank">
+                            <div class="row">
+                                <div class="col-lg-4 feature-item-image-container">
+                                    <img class="f-image-v1" src="https://media.kutumbapp.com/website/vividh_bharat_news.png" alt=""/>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="feature-item-title">
+                                        &#34;राष्ट्रीय संयुक्त अधिवक्ता मंच का ऑफिशियल कुटुंब ऐप जारी&#34;
+                                    </div>
+                                    <div class="feature-item-detail">
+                                        सभी मुख्य घोषणाओं के लिए अलग सूचना बोर्ड और हर एक मेंबर को नोटिफिकेशन, 100% पहुच (facebook पर पहुच 5 % से भी कम)...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row feature-meta">
+                                <div class="col-lg-4 feature-link">
+                                    <a style="color: red;text-decoration: none;" href="https://www.youtube.com/watch?v=zvRvSrgo4G0" target="_blank">
+                                        <img class="feature-link-logo" src="https://media.kutumbapp.com/website/read-link.svg" alt=""/>Read complete article
+                                    </a>
+                                </div>
+                                <div class="col-lg-8 feature-author-details">
+                                    May 18, 2021&nbsp;&nbsp;|&nbsp;&nbsp;Written By - Zee media Bureau
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="playstore-logo-image-mb-block">
+            <img src="https://media.kutumbapp.com/playstore.png" class="playstore-logo-image-mb" alt=""/>
+        </div>
+        <div class="video-block">
+            <div class="title">
+                Want to learn More ?
+            </div>
+
+            <div class="description">
+                Check these videos from our existing community members to know how Kutumb helped them
+                in growing their organisation
+            </div>
+
+            <div class="video-list row">
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video1" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Shree-Vishwakarma-Sena.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Ashutosh Vishwakarma
+                            </div>
+                            <div class="video-author-desc">
+                                Shree Vishwakarma Sena
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video2" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Marudhar-Dewasi-Samaj-Shikshan-Sansthan_.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Narayan P Dewasi
+                            </div>
+                            <div class="video-author-desc">
+                                Marudhar Dewasi Samaj Shikshan Sansthan
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video3" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Panchayat-Ward-Sachiv-Sangh-Bihar.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Chandan Kumar
+                            </div>
+                            <div class="video-author-desc">
+                                Panchayat Ward Sachiv Sangh Bihar
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video4" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Rajasthan-Adiwasi-Meena-Sewa-Sangh.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Kailash Chaparwala
+                            </div>
+                            <div class="video-author-desc">
+                                Rajasthan Adiwasi Meena Sewa Sangh
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video5" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Akhil-Bharatiya-Sirwi-Samaj-Yuwa-Sangathan.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Jayesh Bhaayal
+                            </div>
+                            <div class="video-author-desc">
+                                Akhil Bharatiya Sirwi Samaj Yuwa Sangathan
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video6" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Jaiswal-Yuwa-Club-Bharat.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Santosh Jaiswal
+                            </div>
+                            <div class="video-author-desc">
+                                Jaiswal Yuwa Club Bharat
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video7" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/kashyap-arakshan-army.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Pankaj Kashyap
+                            </div>
+                            <div class="video-author-desc">
+                                Kashyap Arakshan Army
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video8" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Akhil-Bharatiya-Banjara-Samaj.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Rahul Singh
+                            </div>
+                            <div class="video-author-desc">
+                                Akhil Bharatiya Banjara Samaj
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video9" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Akhil-Bharatiya-Dom-Domar-Mahasabha-Bharat.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Deepak Kalsha
+                            </div>
+                            <div class="video-author-desc">
+                                Akhil Bharatiya Dom Domar Mahasabha Bharat
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video10" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Bhim-Army-Ekta-Mission.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Vijay Kumar Aazad
+                            </div>
+                            <div class="video-author-desc">
+                                Bhim Army Ekta Mission
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video11" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Kumhaar-Mahasabha.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Kishor Dulhepura
+                            </div>
+                            <div class="video-author-desc">
+                                Kumhar Mahasabha
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video-item col-lg-4 col-12">
+                        <div class="video">
+                            <video id="video12" preload="metadata" onclick="this.play()">
+                                <source src="https://media.kutumbapp.com/website/video/Rashtriya-Deviputra-Sena.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="playpause"></div>
+                        </div>
+                        <div class="video-author">
+                            <div class="video-author-name">
+                                Sukhpal Charan
+                            </div>
+                            <div class="video-author-desc">
+                                Rashtriya Deviputra Sena
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <div class="benefits-block">
+            <div class="main-title text-center">
+                Benefits of Kutumb App
+            </div>
+            <div class="benefits">
+
+
+                    <div class="row d-flex benefit-item">
+                    <div class="col-lg-4 image-container">
+                        <img class="image" src="https://media.kutumbapp.com/website/benefits-membership.svg" alt=""/>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1 details">
+                        <div class="title">
+                            Membership.
+                        </div>
+                        <div class="description">
+                            Get official membership for your organisation. Membership is automatically provided to a person who joins your community and you will receive a Member&#39;s List right at your fingertips.
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="row d-flex benefit-item">
+                    <div class="col-lg-4 image-container">
+                        <img class="image" src="https://media.kutumbapp.com/website/donate.png" alt=""/>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1 details">
+                        <div class="title">
+                            Donations.
+                        </div>
+                        <div class="description">
+                            You can also take donations for the betterment of your community and society. Donations collected through Kutumb App are 100% secure and a tally of donations is available in the app.
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="row d-flex benefit-item">
+                    <div class="col-lg-4 image-container">
+                        <img class="image" src="https://media.kutumbapp.com/website/ID_card.png" alt=""/>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1 details">
+                        <div class="title">
+                            Identification Card.
+                        </div>
+                        <div class="description">
+                            Members joining your community automatically
+  receive an ID card with the name of your community
+  and it can be used for various organisational work.
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="row d-flex benefit-item">
+                    <div class="col-lg-4 image-container">
+                        <img class="image" src="https://media.kutumbapp.com/website/committee.png" alt=""/>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1 details">
+                        <div class="title">
+                            Committee.
+                        </div>
+                        <div class="description">
+                            You can create your own committee within the app
+  by giving out titles and positions to members of your
+  community. This helps you in building a better
+  organisation and reduces your work.
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="row d-flex benefit-item">
+                    <div class="col-lg-4 image-container">
+                        <img class="image" src="https://media.kutumbapp.com/website/post_feed.png" alt=""/>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1 details">
+                        <div class="title">
+                            Post Feed.
+                        </div>
+                        <div class="description">
+                            All the members of your community have an option
+  to create posts on the app itself. They can share
+  valuable information using this feature and you can also remove any post you deem inappropriate
+  for your community
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="row d-flex benefit-item">
+                    <div class="col-lg-4 image-container">
+                        <img class="image" src="https://media.kutumbapp.com/website/social_discussions.png" alt=""/>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1 details">
+                        <div class="title">
+                            Social Discussions.
+                        </div>
+                        <div class="description">
+                            App also features &#34;Social discussions&#34; where you
+  can start a discussion on any topic you want.
+  Discussions will tell you what your community
+  feels about that particular topic. You can create
+  various such discussions at the same time.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="meet-team-block">
+            <div class="meet-team-title text-center">
+                Meet Our Team
+            </div>
+            <div class="row team-member-list">
+                    <div class="col-4  team-member">
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://media.kutumbapp.com/team/Abhishek_Kejriwal.jpg" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Abhishek
+                        </div>
+                        <div class="member-pos text-center">
+                            Business Team
+                        </div>
+                        <div class="member-desc text-center">
+                            Growth &amp; Business | Ex - Pratilipi, GoJek, Signeasy | IIT Bombay
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/abhishek-kejriwal/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://twitter.com/kutumbapp"><i class="fab fa-twitter-square fa-2x icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4  team-member">
+                        <!-- <div class="col-4 offset-3 team-member "> -->
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://media.kutumbapp.com/team/Avish.jpeg" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Avish
+                        </div>
+                        <div class="member-pos text-center">
+                            Product Team
+                        </div>
+                        <div class="member-desc text-center">
+                            Product, Psychology | Ex - Circle App, Tata Trusts, JPMorgan Chase &amp; Co. | BITS Pilani
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/avish-jain-a94ab596/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://medium.com/@f2013880"><i class="fab fa-medium fa-2x icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4  team-member">
+                        <!-- <div class="col-4 offset-3 team-member "> -->
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://media.kutumbapp.com/team/sachincool.jpeg" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Harshit
+                        </div>
+                        <div class="member-pos text-center">
+                            Technology Team
+                        </div>
+                        <div class="member-desc text-center">
+                            Infrastructure Magician | CKA | AWS Solutions Architect | Ex-smallcase
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/harshit-luthra"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://twitter.com/exploit_sh"><i class="fab fa-twitter-square fa-2x icon"></i></a>
+                            <a href="https://github.com/sachincool"><i class="fab fa-github-square fa-2x icon"></i></a>
+                            <a href="https://sachin.cool"><i class="fas fa-globe-asia fa-2x icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4  team-member">
+                        <!-- <div class="col-4 offset-3 team-member "> -->
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://media.kutumbapp.com/team/kartik.jpg" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Kartik
+                        </div>
+                        <div class="member-pos text-center">
+                            Design Team
+                        </div>
+                        <div class="member-desc text-center">
+                            I am still rendering.
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/kartik-choudhary-2723a2100/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://twitter.com/kitikat27"><i class="fab fa-twitter-square fa-2x icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4  team-member">
+                        <!-- <div class="col-4 offset-3 team-member "> -->
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://media.kutumbapp.com/team/mohit_photo.png" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Mohit
+                        </div>
+                        <div class="member-pos text-center">
+                            Technology Team
+                        </div>
+                        <div class="member-desc text-center">
+                            Engineering | Ex - Pratilipi
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/thecodingninja/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://twitter.com/the_codingninja"><i class="fab fa-twitter-square fa-2x icon"></i></a>
+                            <a href="https://github.com/ms10398"><i class="fab fa-github-square fa-2x icon"></i></a>
+                            <a href="https://thecodingninja.me"><i class="fas fa-globe-asia fa-2x icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4  team-member">
+                        <!-- <div class="col-4 offset-3 team-member "> -->
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://media.kutumbapp.com/team/NaveenDewangan.png" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Naveen
+                        </div>
+                        <div class="member-pos text-center">
+                            Technology Team
+                        </div>
+                        <div class="member-desc text-center">
+                            Engineering, Android | Ex Pratilipian, IBMer, TCSer
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/naveendew/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://stackoverflow.com/users/5943968/naveen-dew"><i class="fab fa-stack-overflow fa-2x icon"></i></a>
+                            <a href="https://github.com/naveendew"><i class="fab fa-github-square fa-2x icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4  team-member">
+                        <!-- <div class="col-4 offset-3 team-member "> -->
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://s3.ap-south-1.amazonaws.com/media.kutumbapp.com/team/swatantra.jpg" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Swatantra
+                        </div>
+                        <div class="member-pos text-center">
+                            Business Team
+                        </div>
+                        <div class="member-desc text-center">
+                            Business Development, Growth, Operations Exellence, Consultant | IIT Kanpur
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/swatantra-verma/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://twitter.com/SWATANTRAIITK"><i class="fab fa-twitter-square fa-2x icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4  team-member">
+                        <!-- <div class="col-4 offset-3 team-member "> -->
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://s3.ap-south-1.amazonaws.com/media.kutumbapp.com/team/Vasundhara+Srivastava.png" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Vasundhara
+                        </div>
+                        <div class="member-pos text-center">
+                            Community Team
+                        </div>
+                        <div class="member-desc text-center">
+                            Brand Communication Strategist
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/vasundharasrivastava/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://twitter.com/vasu_1991"><i class="fab fa-twitter-square fa-2x icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-4  team-member">
+                        <!-- <div class="col-4 offset-3 team-member "> -->
+                        <div class="member-pic-container">
+                            <img class="member-pic" src="https://s3.ap-south-1.amazonaws.com/media.kutumbapp.com/team/vipul_photo.jpeg" alt="">
+                        </div>
+                        <div class="member-name text-center">
+                            Vipul
+                        </div>
+                        <div class="member-pos text-center">
+                            Product Team
+                        </div>
+                        <div class="member-desc text-center">
+                            Product &amp; Growth | Ex - Pratilipi, American Express, Lenskart | IIT Kharagpur
+                        </div>
+                        <div class="member-links text-center">
+                            <a href="https://www.linkedin.com/in/vipulallawadhi/"><i class="fab fa-linkedin fa-2x icon"></i></a>
+                            <a href="https://twitter.com/vipulallawadhi"><i class="fab fa-twitter-square fa-2x icon"></i></a>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+        <div class="form" id="form">
+            <div id="submittedform">
+                <div class="description">
+                    Your form has been sucessfully submitted
+                </div>
+<!--                <div class="description">-->
+<!--                    Made a mistake while filling? <a href="contact-us-admin/english">refill the form</a>-->
+<!--                </div>-->
+            </div>
+            <div class="title" id="formtitle">
+                Please Fill the Form
+            </div>
+            <div class="description">
+                Our team will get in touch with you very soon !
+            </div>
+            <div class="compulsory" id="compulsory">
+                * marked are compulsory
+            </div>
+            <form action>
+                <div class="form-list" id="formlist">
+                    <div class="form-element">
+                        <div class="form-label">Name of your Organisation <span class="asterisk">*</span></div>
+                        <div class="form-input">
+                            <input class="input-box" type="text" tabindex="1" id="organisation-name" autocomplete="off_test">
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <div class="form-label">Total members in your community? <span class="asterisk">*</span></div>
+                        <div class="form-input">
+                            <input class="input-box" type="number" id="member-count" tabindex="2" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <div class="form-label">Your Designation</div>
+                        <div class="form-input">
+                            <input class="input-box" type="text" id="designation" tabindex="3" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <div class="form-label">Full Name <span class="asterisk">*</span></div>
+                        <div class="form-input">
+                            <input class="input-box" type="text" id="fullname" tabindex="4" autocomplete="name">
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <div class="form-label">Phone Number <span class="asterisk">*</span></div>
+                        <div class="form-input" style="position: relative;">
+                            <span style="position:absolute; font-size: 14px; bottom: 1.6rem; left: 1rem">+91</span>
+                            <input class="input-box" name="mobile" type="tel" id="phonenumber" maxlength="10" autocomplete="mobile" tabindex="5" style="padding-left: 2.5rem; font-size: 14px;">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="contact-us-box" id="submit-form">
+                            <p class="contact-us-text">
+                                Submit
+                            </p>
+                        </div>
+                    </div>
+                    <div class="condition-text">
+                        <input type="checkbox" id="condition" checked onclick="handleCheckBox(this)">&nbsp;&nbsp;&nbsp;&nbsp;By filling in the details you agree to our <a href="privacy-policy">Privacy Policy</a> and
+                        <a href="tos">Terms of Use</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <footer id="footer">
+                <div class="footer-links">
+                    <div><a href="tos">Terms Of Service</a></div>
+                    <div><a href="privacy-policy">Privacy Policy</a></div>
+                    <div><a href="compliance">Compliance</a></div>
+                    <div><a href="community-guidelines">Community Guidelines</a></div>
+                    <div class="my-2 socials" style="padding-left: 0 !important;">
+                        <a href="mailto:connect@kutumbapp.com">
+                            <img class="social-icons icon-spacing img-fluid" src="https://media.kutumbapp.com/assets/gmail.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/kutumbapp/">
+                            <img class="social-icons icon-spacing img-fluid" src="https://media.kutumbapp.com/assets/instagram.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/kutumbapp">
+                            <img class="social-icons icon-spacing img-fluid" src="https://media.kutumbapp.com/assets/facebook.png" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCyxqm3JY3do4DoFdyzA5t4Q">
+                            <img class="social-icons icon-spacing img-fluid" src="https://media.kutumbapp.com/assets/youtube.png" alt="">
+                        </a>
+                        <a href="https://twitter.com/kutumbapp">
+                            <img class="social-icons img-fluid" src="https://media.kutumbapp.com/assets/twitter.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="info" style="text-align: right; font-family: 'Lato', sans-serif;">
+                    <div class="name pr-1"><b>
+                        <img src="https://media.kutumbapp.com/logo.png" class="img-fluid" alt="" height="25" width="25" style="position: relative; top: -3px; margin-right: 2px;"> Kutumb</b>
+                    </div>
+                    <p>
+                        भारत
+                        <img src="https://media.kutumbapp.com/assets/india.png" alt="🇮🇳" width="20" height="20">
+                        से, भारत के लिए
+                        <img src="https://media.kutumbapp.com/assets/heart.png" alt="❤️" width="20" height="20">
+                    </p>
+                    <div class="address">
+                        4th Floor,&nbsp;246,<br>17th Cross Road above Reliance Trendz,
+                        <br>Sector 7, HSR Layout
+                        <br>Bengaluru, Karnataka 560102,
+                        India
+                        <br>
+                    </div>
+                    <div class= "map" style="width: 100%">
+                        <iframe width="100%" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.924226172218!2d77.63197151482142!3d12.912591590894582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15200d5e4ac9%3A0xa9e4c0ccf10f2c0d!2sKutumb!5e0!3m2!1sen!2sin!4v1615631232277!5m2!1sen!2sin"></iframe>
+                    </div>
+                    <div class="contact">
+                        Email: <a href="mailto:connect@kutumbapp.com">connect@kutumbapp.com</a> <br>
+                        Phone: <a href="tel:+918447445425">+91-8447445425</a><br><a href="tel:+918447445435">+91-8447445435</a>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyright mb-3" id="company-name-size" style="font-family: 'Lato', sans-serif;">
+                © 2022 Primetrace Technologies Private Limited
+            </div>
+        </div>
+        <script>
+        function getCookie(cName) {
+            const name = cName + "=";
+            const cDecoded = decodeURIComponent(document.cookie); //to be careful
+            const cArr = cDecoded.split('; ');
+            console.log(cArr)
+            let res;
+            cArr.forEach(val => {
+                if (val.indexOf(name) === 0) res = val.substring(name.length);
+            })
+            return res
+        }
+
+        function getParam(p) {
+            var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+            return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+        }
+
+        function getExpiryRecord(value) {
+            var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // 90 day expiry in milliseconds
+            var expiryDate = new Date().getTime() + expiryPeriod;
+            return {
+            value: value,
+            expiryDate: expiryDate
+            }
+        }
+
+        function getGclid() {
+            let gclid = getParam('gclid')
+            if (gclid) {
+            const gclidRecord = getExpiryRecord(gclid)
+            localStorage.setItem('gclid', JSON.stringify(gclidRecord))
+            return gclid
+            }
+
+            const gclidRecord = JSON.parse(localStorage.getItem('gclid'))
+            const isGclidValid = gclidRecord && new Date().getTime() < gclidRecord.expiryDate;
+            gclid = isGclidValid ? gclidRecord.value : null
+            return gclid
+        }
+
+        async function pushGAEvent ({ event, cs, cm, gclid}) {
+            const gid = getCookie('_gid')
+            if (!gid) return
+            let url = `https://www.google-analytics.com/collect?v=1&tid=UA-198724471-1&cid=${gid}&t=event&ec=ONBOARDING&ea=${event}&ds=web&cs=${cs}&cm=${cm}`
+            if (gclid) {
+            url += `&gclid=${gclid}`
+            }
+
+            await fetch(url)
+            .then(res => console.log('successfully logged ga event', res))
+            .catch(err => console.error('failed to log ga event', err))
+        }
+
+        let isVideoPlaying = false
+        let userAgent = navigator.userAgent
+        let currentURL = window.location.href
+        let downloadBtn = document.getElementById('contact-us-button')
+        let submitFormButton = document.getElementById('submit-form')
+        let conditionCheckBox = document.getElementById('condition')
+        let phoneNumber = document.getElementById('phonenumber')
+        let fullName = document.getElementById('fullname')
+        let designation = document.getElementById('designation')
+        let formlist = document.getElementById('formlist')
+        let formtitle = document.getElementById('formtitle')
+        let compulsory = document.getElementById('compulsory')
+        let submittedform = document.getElementById('submittedform')
+        let memberCount = document.getElementById('member-count')
+        let organisationName = document.getElementById('organisation-name')
+        let submitted = false
+        let adId = 'organic'
+        let params = new URLSearchParams(window.location.search)
+        if (params.has('campaign')) {
+            adId = params.get('campaign')
+        }
+
+        const gclid = getGclid()
+
+        function showSnackbar() {
+            // Get the snackbar DIV
+            var x = document.getElementById("snackbar");
+
+            // Add the "show" class to DIV
+            x.className = "show";
+
+            // After 3 seconds, remove the show class from DIV
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        phoneNumber.addEventListener(('keydown'), (e) => {
+            console.log(e)
+            console.log(phoneNumber.value.length, phoneNumber.value.length >= 10 && e.key !== 'Backspace')
+            if(e.keyCode === 13) {
+                submitForm()
+            }
+            if (phoneNumber.value.length >= 10 && e.key !== 'Backspace') {
+            e.preventDefault()
+            }
+            if ((!(e.key >= '0' && e.key <= '9')) && e.key !== 'Backspace') {
+            showSnackbar()
+            }
+        })
+
+        function submitForm() {
+            console.log({
+                organisationName: organisationName.value,
+                memberCount: memberCount.value,
+                designation: designation.value,
+                fullName: fullName.value,
+                phoneNumber: phoneNumber.value,
+                conditionCheckBox: conditionCheckBox.checked,
+                adId
+            })
+            let error = false
+            if (submitted) {
+                console.log('Doing nothing')
+            }
+            if (organisationName.value.length === 0) {
+                error = true
+                organisationName.style.background = '#fff3f4'
+            } else {
+                organisationName.style.background = 'white'
+            }
+            if (memberCount.value.length === 0) {
+                error = true
+                memberCount.style.background = '#fff3f4'
+            } else {
+                memberCount.style.background = 'white'
+            }
+            if (fullName.value.length === 0) {
+                error = true
+                fullName.style.background = '#fff3f4'
+            } else {
+                fullName.style.background = 'white'
+            }
+            if (phoneNumber.value.length === 0) {
+                error = true
+                phoneNumber.style.background = '#fff3f4'
+            } else {
+                phoneNumber.style.background = 'white'
+            }
+            if (!conditionCheckBox.checked) {
+                error = true
+            }
+            if (error) {
+                console.log('Resubmit Form')
+            } else {
+                submitted = true
+                console.log('This form is fine')
+                formlist.style.display = 'none'
+                formtitle.style.display = 'none'
+                compulsory.style.display = 'none'
+                submittedform.style.display = 'block'
+
+                let fbc = getCookie('_fbc')
+                let fbp = getCookie('_fbp')
+                let gid = getCookie('_gid')
+                const requestObject = {
+                    organisationName: organisationName.value,
+                    memberCount: memberCount.value,
+                    designation: designation.value,
+                    fullName: fullName.value,
+                    phoneNumber: phoneNumber.value,
+                    conditionCheckBox: conditionCheckBox.checked,
+                    language: 'English',
+                    adId
+                }
+                if (adId !== 'organic') {
+                    if (fbp) {
+                    requestObject.fbp = fbp
+                    }
+                    if (fbc) {
+                    requestObject.fbc = fbc
+                    }
+                }
+                if (gid) {
+                    requestObject.gid = gid
+                }
+                if (gclid) {
+                    requestObject.gclid = gclid
+                }
+                console.log('Fbc and fbp and gid', { fbc, fbp, gid, gclid })
+
+                gtag_report_conversion()
+                fbq('trackCustom', 'Filled Community Form')
+                fetch('/kutumb/v1.0/contact-form', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestObject)
+                }).then(res => {
+                    pushGAEvent({ event: 'FORM_SUBMITTED', cs: adId, cm: adId, gclid })
+                    console.log(res)
+                }).catch(err => {
+                console.log('Error in filling form', err)
+                })
+                setTimeout(() => {
+                    window.location = `/thank-you/ENGLISH`
+                }, 2000)
+            }
+        }
+        submitFormButton.addEventListener('click', submitForm)
+
+        function handleCheckBox (checkbox) {
+            if (!checkbox.checked) {
+                submitFormButton.style.backgroundColor = '#b9b9b9'
+                submitFormButton.style.cursor = 'not-allowed'
+            } else {
+                submitFormButton.style.backgroundColor = '#fa3f4a'
+                submitFormButton.style.cursor = 'pointer'
+            }
+        }
+        const videoListContainer = document.getElementsByClassName('video-list');
+        const videoListContainerWidth = videoListContainer[0].scrollWidth;
+        const featuredListContainer = document.getElementsByClassName('featured-list');
+        const featuredItemWidth = document.getElementsByClassName('feature-item')[0].scrollWidth;
+        const featuredListContainerWidth = featuredListContainer[0].scrollWidth;
+        function createVideoAutoSlider() {
+            setInterval(() => {
+                // console.log('I am executing', videoListContainer[0].scrollLeft, videoListContainerWidth)
+                if (!isVideoPlaying) {
+                    if (videoListContainer[0].scrollLeft <= videoListContainerWidth) {
+                        videoListContainer[0].scrollTo({
+                        left: videoListContainer[0].scrollLeft + 250,
+                        top: 0,
+                        behavior: 'smooth'
+                        })
+                    } else {
+                        videoListContainer[0].scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: 'smooth'
+                        })
+                    }
+                }
+            }, 5000);
+        }
+        function createFeaturedAutoSlider() {
+            let scrollLeft = 0
+            setInterval(() => {
+                // console.log('I am executing', scrollLeft, featuredListContainer[0].scrollLeft, featuredListContainerWidth, featuredItemWidth)
+                featuredListContainer[0].scrollTo({
+                    left: featuredListContainer[0].scrollLeft + featuredItemWidth + 15,
+                    top: 0,
+                    behavior: 'smooth'
+                })
+                if (scrollLeft === featuredListContainer[0].scrollLeft) {
+                    featuredListContainer[0].scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    })
+                } else {
+                    scrollLeft = featuredListContainer[0].scrollLeft
+                }
+            }, 5000);
+        }
+        window.addEventListener('load', () => {
+            // console.log('Coming here')
+            createVideoAutoSlider()
+            createFeaturedAutoSlider()
+            amplitude.getInstance().logEvent('LANDED_HOME', {
+                'Screen Name' : 'Homepage',
+                'Current URL' : `${currentURL}`,
+                'UA' : `${userAgent}`,
+            })
+        });
+        function videoPausePlayHandler(e) {
+            if (e.type === 'playing') {
+                //add controls
+                e.target.setAttribute("controls","controls");
+                isVideoPlaying = true
+            } else if (e.type === 'pause') {
+                //remove controls
+                isVideoPlaying = false
+                e.target.parentNode.children[1].style.display = 'block'
+                e.target.removeAttribute("controls");
+            }
+        }
+        const videos = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        videos.forEach(i => {
+            const video = document.getElementById(`video${i}`);
+            video.addEventListener('playing', videoPausePlayHandler, false);
+            video.addEventListener('pause', videoPausePlayHandler, false);
+        })
+        const playpausebutton = document.getElementsByClassName('playpause')
+        Array.from(playpausebutton).forEach((element) => {
+            element.addEventListener('click', (e) => {
+                e.target.style.display = 'none'
+                e.target.parentNode.children[0].play()
+            })
+        })
+        </script>
+    </body>
+
+</html>

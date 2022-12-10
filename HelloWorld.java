@@ -1,6 +1,7 @@
 import java.util.*;
+import bank.Bank;
 
-class HelloWorld{
+public class HelloWorld{
     public static void main(String[] args){
         System.out.println("Do a simple Addition here: ");
         int a = 10;
@@ -13,6 +14,10 @@ class HelloWorld{
         System.out.println(ans);
         int anss = (a * b) / (b  - a);
         System.out.println(anss);
+
+        Bank.Account acc = new Bank.Account();
+
+
 
     }
 }
